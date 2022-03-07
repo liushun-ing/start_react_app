@@ -1,8 +1,11 @@
 // 顺序：第三方、自定义组件、样式
 import React, { Component } from 'react';
+// import axios from 'axios';
+
+import Search from './component/Search';
+import List from './component/List';
+
 import "./App.css";
-import Count from './containers/Count';
-import store from './redux/store';
 
 export class App extends Component {
 
@@ -16,7 +19,10 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Count></Count>
+        <div className="container">
+          <Search></Search>
+          <List></List>
+        </div>
       </div>
     )
   }

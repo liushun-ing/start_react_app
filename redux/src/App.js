@@ -1,8 +1,7 @@
 // 顺序：第三方、自定义组件、样式
 import React, { Component } from 'react';
 import "./App.css";
-import Count from './containers/Count';
-import store from './redux/store';
+import Count from './component/Count';
 
 export class App extends Component {
 
